@@ -7,6 +7,7 @@ import BlogPage from './Pages/BlogPage'
 import NotificationPage from './Pages/NotificationPage'
 import SingleBlogPage from './Pages/SingleBlogPage';
 import SinglePropertyPage from './Pages/SinglePropertyPage';
+import RegisterUserPage from './Pages/RegisterUserPage'
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path='notification' element={<NotificationPage/>} />
         <Route path='/blog/:id' element={<SingleBlogPage/>}/>
         <Route path="/property/:id" element={<SinglePropertyPage/>} />
+        <Route path='/register-user' element={<RegisterUserPage/>}/>
       </Routes>
     </Router>
   );

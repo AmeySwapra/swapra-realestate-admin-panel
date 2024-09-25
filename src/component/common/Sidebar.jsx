@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, VStack, Avatar, Text, HStack, IconButton, Menu, MenuButton, MenuList, MenuItem, useToast, Tooltip } from '@chakra-ui/react';
 import { SettingsIcon, SunIcon, MoonIcon } from '@chakra-ui/icons';
-import { FaHome, FaTools, FaPen, FaThLarge, FaBell } from 'react-icons/fa'; 
+import { FaHome, FaTools, FaPen, FaThLarge, FaBell, FaUser } from 'react-icons/fa'; 
 import { useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
@@ -86,7 +86,14 @@ const Sidebar = () => {
               <Text color={textColor} ml={5}>Blog</Text>
             </Link>
           </HStack>
-      
+          <HStack>
+            <Link to="/register-user">
+              <FaUser size={24} color="red" />
+            </Link>
+            <Link to="/register-user">
+              <Text color={textColor} ml={5}>Register User</Text>
+            </Link>
+          </HStack>
           <HStack>
           <Link to="/notification">
               <FaBell size={24} color="green" />

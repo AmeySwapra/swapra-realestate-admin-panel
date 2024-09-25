@@ -228,7 +228,7 @@ const PropertyGrid = () => {
                     {property.name}
                   </Text>
                   <Text fontSize="md" color={textSecondaryColor}>
-                    Price: {property.price}
+                    Price: ₹{property.price}
                   </Text>
                   <Text fontSize="sm" color={textSecondaryColor}>
                     Location: {property.location}

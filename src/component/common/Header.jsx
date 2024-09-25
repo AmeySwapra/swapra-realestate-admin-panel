@@ -20,9 +20,9 @@ const Header = () => {
         <Text fontSize="30px" ml={2}>
           JustHome Admin
         </Text>
-        <Button colorScheme="blue" ml="auto" onClick={openModal}>
+        {/* <Button colorScheme="blue" ml="auto" onClick={openModal}>
           Sign In
-        </Button>
+        </Button> */}
       </Flex>
       <AuthModal isOpen={isModalOpen} onClose={closeModal} />
     </Box>

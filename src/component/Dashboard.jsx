@@ -38,7 +38,7 @@ const Dashboard = () => {
         const servicesResponse = await axios.get('https://restate-json.onrender.com/servicesData');
 
         
-        const randomUsers = Math.floor(Math.random() * 1000);
+        const randomUsers = await axios.get('https://real-estate-backend-3-ydh8.onrender.com/api/auth/register-user')
         const randomVisitors = Math.floor(Math.random() * 5000);
 
         
@@ -46,7 +46,7 @@ const Dashboard = () => {
           properties: propertiesResponse.data.length,
           blogs: blogsResponse.data.length,
           services: servicesResponse.data.length,
-          users: randomUsers,
+          users: randomUsers.data.length,
           visitors: randomVisitors,
         });
       } catch (error) {
